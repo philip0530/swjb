@@ -5,6 +5,12 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
 a {
     text-decoration: none;
     display: block;
@@ -19,7 +25,7 @@ li {
 
     width: 100%;
     height: 1200px;
-    background:linear-gradient( rgba(0,0,0,0.8)   , rgba(0,0,0,0.8)   )     ,url(bg.png)no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg.png)no-repeat;
     background-size: cover;
     color: rgb(255, 255, 255);
 }
@@ -50,7 +56,8 @@ li {
     text-align: center;
     transition: 0.3s;
 }
-.logo:hover{
+
+.logo:hover {
     color: aquamarine;
 }
 
@@ -72,91 +79,171 @@ li {
     color: white;
     transition: 0.3s;
 }
-.menu li a:hover{
+
+.menu li a:hover {
     color: aquamarine;
 }
 
-.main h1{
+.main h1 {
     font-size: 50px;
     margin-bottom: 50px;
 }
-.main h2{
+
+.main h2 {
     font-style: 50px;
     margin-bottom: 30px;
 }
-.main p{
+
+.main p {
     font-size: 30px;
     margin-bottom: 50px;
 }
-.main button{
-font-size: 30px;
-width: 300px;
-height: 100px;
-border: 1px solid white;
-border-radius: 30px;
-background-color: transparent;
-color: white;
-transition: 0.3s;
+
+.main button {
+    font-size: 30px;
+    width: 300px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    transition: 0.3s;
 }
 
-.main button:hover{
+.main button:hover {
     background-color: white;
     color: black;
 }
 
-.about{
+.about {
     width: 1200px;
     height: 800px;
     margin: 0 auto;
-    margin-top: 200px; 
+    margin-top: 200px;
 }
 
-.about h2{
+.about h2 {
     font-size: 30px;
     color: aquamarine;
 }
 
-.about h1{
+.about h1 {
     font-size: 50px;
 }
 
-.about .contents{
+.about .contents {
     width: 100%;
     height: 500px;
     display: flex;
 }
 
-.about .left{
+.about .left {
     width: 400px;
     height: 500px;
 }
-.about .left img{
+
+.about .left img {
     width: 400px;
     height: 500px;
 
 }
 
-.about .right{
+.about .right {
     width: 800px;
     height: 500px;
     padding-left: 10px;
 }
 
-.about .right h3{
+.about .right h3 {
     color: aquamarine;
     font-size: 30px;
 }
 
-.about .right li{
+.about .right li {
     font-size: 22px;
     margin-top: 10px;
 }
 
-.fa-youtube{
+.fa-youtube {
     color: red;
     font-size: 50px;
 }
 
-.fa-brands{
+.fa-brands {
     font-size: 50px;
-    margin-right: 6px;}
+    margin-right: 6px;
+}
+
+.skills {
+    width: 100%;
+    height: 700px;
+    background-color: #eee;
+}
+
+.skills-inner {
+
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+.skills h1 {
+    font-size: 50px;
+}
+
+.skills h2 {
+    font-size: 30px;
+    color: aquamarine;
+}
+
+.skills .contents {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills .contents li {
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.skills h3{
+text-align: center;
+font-size: 25px;
+}
+
+.skill p{
+    margin-top: 30;
+text-align: center;
+font-size: 20px;
+}
+
+.skills i{
+    color: aquamarine;
+    transition: 0.3s;
+}
+
+.skills .contents li:hover{
+    background-color: aquamarine;
+    color: white;
+    
+}
+
+.skills .contents li:hover i{
+    color: white;
+}
+
+.bg{
+    width: 100%;
+    height: 800px;
+    background: url(bg2.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
