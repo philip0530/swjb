@@ -57,6 +57,39 @@ li {
     text-align: center;
 }
 
+.typing-container {
+    position: relative;
+    font-size: 24px;
+}
+
+.typing-text {
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 0.5s steps(30, end) forwards, blink-caret 0.75s step-end infinite; /* 타이핑 속도 변경 */
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
 .logo {
     width: 200px;
     height: 80px;
@@ -65,11 +98,7 @@ li {
     transition: 0.3s;
 }
 
-pre{
-    font-size: 8px;
-    max-width: 300px; 
 
-}
 .logo:hover {
     color: darkturquoise;
 }
@@ -96,6 +125,34 @@ pre{
 .menu li a:hover {
     color: darkturquoise;
 }
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* 메뉴 항목을 수평으로 정렬 */
+}
+
+.menu li {
+    transition: all 0.3s ease; /* 애니메이션 효과 */
+}
+
+.menu li a {
+    text-decoration: none; /* 기본 밑줄 제거 */
+    color: #ffffff; /* 기본 글자 색상 */
+    padding: 10px 20px; /* 패딩 추가 */
+    display: inline-block; /* 블록으로 만들어 호버 시 전체를 클릭 가능하게 함 */
+}
+
+.menu li:hover {
+    transform: scale(1.1); /* 호버 시 크기 증가 */
+}
+
+.menu li:hover a {
+    color: darkturquoise; /* 호버 시 글자 색상 변경 */
+    background-color: rgba(0, 123, 255, 0.1); /* 호버 시 배경 색상 변경 */
+    border-radius: 5px; /* 배경에 둥근 모서리 추가 */
+}
+
 
 .main h1 {
     font-size: 50px;
